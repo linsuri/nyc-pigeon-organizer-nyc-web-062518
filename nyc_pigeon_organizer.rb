@@ -6,7 +6,8 @@ def nyc_pigeon_organizer(data)
       names_array.each do |name|
         if pigeon_list[name] == nil
           pigeon_list[name] = {}
-        else
+        end
+        if 
           pigeon_list[name][attribute] << choice
         end
       end
