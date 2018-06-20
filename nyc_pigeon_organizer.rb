@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     choice_hash.each do |choice, names_array|
       names_array.each do |name|
         if pigeon_list[name] == nil
-          pigeon_list[name] = {data[]}
+          pigeon_list[name] = {}
           
         
 end
