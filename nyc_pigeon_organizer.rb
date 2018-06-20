@@ -21,7 +21,7 @@ end
 
 def nyc_pigeon_organizer(data)
    new_pigeon = {}
-   pigeon_data.each_pair do |key, value|
+   data.each_pair do |key, value|
      # keys color, gender, lives
      # value => {
      #   :purple => ["Theo", "Peter Jr.", "Lucky"],
