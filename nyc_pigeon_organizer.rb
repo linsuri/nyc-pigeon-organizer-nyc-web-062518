@@ -1,4 +1,4 @@
-=begin
+
 def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_list = {}
@@ -11,14 +11,15 @@ def nyc_pigeon_organizer(data)
         if pigeon_list[name][:color] == nil
           pigeon_list[name][:color] = []
         end
-        pigeon_list[name][attribute] << choice
+        pigeon_list[name][attribute] << choice.to_s
       end
     end  
   end
   pigeon_list
 end
-=end
 
+
+=begin
 def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |(key, h), result|
     h.each do |value, names|
@@ -30,3 +31,4 @@ def nyc_pigeon_organizer(data)
     end
   end
 end
+=end
