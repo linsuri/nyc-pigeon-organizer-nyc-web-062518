@@ -8,7 +8,9 @@ def nyc_pigeon_organizer(data)
         if pigeon_list[name] == nil
           pigeon_list[name] = {}
         end  
-        pigeon_list[name][attribute] ||= []
+        if pigeon_list[name][attribute] == nil
+          pigeon_list[name][attribute] = []
+        end  
         pigeon_list[name][attribute] << choice.to_s
       end
     end  
