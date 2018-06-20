@@ -5,7 +5,9 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, choice_hash|
     choice_hash.each do |choice, names_array|
       names_array.each do |name|
-        pigeon_list[name] ||= {}
+        if pigeon_list[name] == nil
+          pigeon_list[name] = {}
+        end  
         pigeon_list[name][attribute] ||= []
         pigeon_list[name][attribute] << choice.to_s
       end
