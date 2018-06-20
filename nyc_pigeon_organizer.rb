@@ -7,8 +7,9 @@ def nyc_pigeon_organizer(data)
         if pigeon_list[name] == nil
           pigeon_list[name] = {}
         else
-          pigeon_list[name][:color] = []
-          pigeon_list[name][:gender] = []
-          pigeon_list[name][:lives] = []
-        
+          pigeon_list[name][attribute] << choice
+        end
+      end
+    end  
+  end      
 end
