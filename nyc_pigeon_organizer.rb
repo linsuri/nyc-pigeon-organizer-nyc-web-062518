@@ -6,6 +6,9 @@ def nyc_pigeon_organizer(data)
       names_array.each do |name|
         if pigeon_list[name] == nil
           pigeon_list[name] = {}
-          
+        else
+          pigeon_list[name][:color] = []
+          pigeon_list[name][:gender] = []
+          pigeon_list[name][:lives] = []
         
 end
